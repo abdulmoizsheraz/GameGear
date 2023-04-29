@@ -3,7 +3,7 @@ import { createSlice } from '@reduxjs/toolkit'
 export const CartSlice = createSlice({
   name: 'cart',
   initialState:{
-items:[]
+    items:[],
   },
   reducers: {
 addtocart:(state,action)=>{
@@ -14,10 +14,11 @@ addtocart:(state,action)=>{
       } else {
         state.items.push({ id, title, price,image, quantity: 1 });
       }
-},
-
+      localStorage.setItem('cartItems', JSON.stringify(state.items));
+    },
   },
 })
+// console.log(JSON.parse(localStorage.getItem('cartItems')))
 
 // Action creators are generated for each case reducer function
 export const { addtocart} = CartSlice.actions;

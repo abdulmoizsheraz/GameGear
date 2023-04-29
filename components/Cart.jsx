@@ -7,6 +7,8 @@ const closecart=()=>
 {
 settoggle(false)
 }  
+const cartItems = JSON.parse(localStorage.getItem('cartItems')) || [];
+console.log(cartItems)
 return (
     <>
     <div class="cart ">
@@ -15,18 +17,16 @@ return (
       <button onClick={closecart}><FaWindowClose/></button>
     </div>
     <div class="cart__items">
-      {/* {items.map((title,image,price)=>{
-      <div class="cart__item">
-        <img src="https://via.placeholder.com/150x150" alt="Product Image"/>
-        <div class="cart__item-details">
-          <h3>Product Name</h3>
-          <p>Price: $19.99</p>
-          <button class="cart__remove-btn">Remove</button>
-        </div>
-      </div>
-      })} */}
-      No items
-     
+    {cartItems.map((item) => (
+            <div className="cart__item" key={item.id}>
+              <img src={item.image} alt="Product Image" />
+              <div className="cart__item-details">
+                <h3>{item.title}</h3>
+                <p>Price: {item.price}</p>
+                <button className="cart__remove-btn">Remove</button>
+              </div>
+            </div>
+          ))}
     </div>
     <div class="cart__subtotal">
       <p>Subtotal: $44.98</p>

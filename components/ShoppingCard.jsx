@@ -26,7 +26,7 @@ const ShoppingCard = ({ image, price, title,category,id }) => {
             borderColor="rgba(255, 250, 250, 0.13)"
             //   webkitBackdropFilter="blur(10px)"
         >
-             <Tag size="md" position="absolute" top="0" left="0" variant='subtle' colorScheme='red'>
+             <Tag borderRadius="0" className="rounded-none" size="md"  position="absolute" top="0" left="0" variant='subtle' colorScheme='red'>
         {category}
         </Tag>
             {hovered ? <AddtoCartbtn hover={hovered} sethoverd={sethoverd}  
@@ -34,8 +34,6 @@ const ShoppingCard = ({ image, price, title,category,id }) => {
             image={image}
             price={price}
             id={id}
-
-            
             /> :
                 <>
                     <img src={image} style={{height:"250px" ,width:"250px"}} />
