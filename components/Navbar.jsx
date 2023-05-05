@@ -5,20 +5,29 @@ import {BsCartFill} from 'react-icons/bs'
 import Link from 'next/link'
 import Cart from './Cart'
 import { set } from 'mongoose'
-import LoginSignup from './LoginSignup'
+import Signup from './Signup'
+import Login from './Login'
 const Navbar = () => {
   const categories=["Mouse","Mice","Chairs","Handsets"];
   const [toggle,settoggle]=useState(false)
+  const [signup,setsign]=useState(false)
   const [login,setlogin]=useState(false)
   const showCart=()=>{
    settoggle(true);
 }
 const showloginsignup=()=>{
- if(login ==false){
-  setlogin(true);
+ if(signup ==false){
+  setsign(true);
  }else{
-  setlogin(false);
+  setsign(false);
  }
+}
+const showlogin=()=>{
+  if(login ==false){
+    setlogin(true);
+   }else{
+    setlogin(false);
+   }
 }
   return (
     <>
@@ -39,11 +48,12 @@ const showloginsignup=()=>{
     </div>
       <span className='div-loginSignup'>
       <button className='btn-signup' onClick={showloginsignup}>Signup</button>
-      <button className='btn-login' onClick={showloginsignup}>Login</button>
+      <button className='btn-login' onClick={showlogin}>Login</button>
       </span>
   </nav>
   {toggle && <Cart toggle={toggle} settoggle={settoggle}/>}
-  {login && <LoginSignup login={login} setlogin={setlogin}/>}
+  {signup && <Signup signup={login} setsign={setlogin}/>}
+  {login && <Login login={login} setlogin={setlogin}/>}
     </>
 
   

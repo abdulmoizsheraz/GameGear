@@ -304,17 +304,18 @@ border: 1px solid rgba(255, 255, 255, 0.3);
   justify-content: center;
   align-items: center;
   height: 100vh;
+  color: black !important;
 }
 
 .login-form-container {
   font-weight: bold;
   color: white;
-background: rgba(255, 255, 255, 0.09);
+background: rgba(49, 48, 48, 0.78);
 border-radius: 16px;
 box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-backdrop-filter: blur(6px);
--webkit-backdrop-filter: blur(6px);
-border: 1px solid rgba(255, 255, 255, 0.3);
+backdrop-filter: blur(11.8px);
+-webkit-backdrop-filter: blur(11.8px);
+border: 1px solid rgba(49, 48, 48, 0.33);
   overflow: hidden;
   width: 561px;
   height: 70vh;
@@ -323,6 +324,8 @@ border: 1px solid rgba(255, 255, 255, 0.3);
 h2 {
   text-align: center;
   margin-bottom: 30px;
+  font-weight: bolder;
+  font-size: 30px;
 }
 
 .form {
@@ -341,11 +344,12 @@ h2 {
   padding: 10px 0;
   width: 100%;
   outline: none;
+  background: none;
 }
 
 .form-group input:focus,
 .form-group input:valid {
-  border-bottom-color: #1abc9c;
+  border-bottom-color: red;
 }
 
 .form-group label {
@@ -363,11 +367,15 @@ h2 {
 .form-group input:valid ~ label {
   top: -20px;
   font-size: 12px;
-  color: #1abc9c;
+  color: white;
 }
 
 button[type="submit"] {
-  background-color: #1abc9c;
   border: none;
-  color: #fff;}
+  color: #fff;
+  padding:  10px 12px;
+background-color: white;
+color: black;
+border-radius:34px ;
+}
  
