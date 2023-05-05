@@ -259,5 +259,115 @@ border: 1px solid rgba(255, 255, 255, 0.3);
 .cart__checkout-btn:hover {
   background-color: #008000;
 }
+/* Signup login */
+.div-loginSignup{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid white;
+  border-radius: 12px;
+  padding:  12px 12px;
+  margin-right: 120px;
+  height: 50px;
+  width: 200px;
+}
+.btn-signup{
+  margin:0px 12px;
+  font-weight: bolder;
+  width: 82px;
+  height: 50px;
+ 
+}
+.btn-signup:hover{
+  background-color: white;
+  color: black;
+}
+.btn-login{
+  margin:0px 12px;
+  font-weight: bolder;
+  width: 82px;
+  height: 50px;
+}
+.btn-login:hover{
+  background-color: white;
+  padding:6px 6px;
+  color: black;
+}
+/* Componet */
   
+.login-signup-container {
+  position: absolute;
+  top: 50px;
+  right: 472px;
+  z-index: 5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.login-form-container {
+  font-weight: bold;
+  color: white;
+background: rgba(255, 255, 255, 0.09);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(6px);
+-webkit-backdrop-filter: blur(6px);
+border: 1px solid rgba(255, 255, 255, 0.3);
+  overflow: hidden;
+  width: 561px;
+  height: 70vh;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.form {
+  padding: 40px;
+}
+
+.form-group {
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.form-group input {
+  border: none;
+  border-bottom: 2px solid #ddd;
+  font-size: 16px;
+  padding: 10px 0;
+  width: 100%;
+  outline: none;
+}
+
+.form-group input:focus,
+.form-group input:valid {
+  border-bottom-color: #1abc9c;
+}
+
+.form-group label {
+  color: #999;
+  font-size: 16px;
+  font-weight: normal;
+  position: absolute;
+  pointer-events: none;
+  left: 0;
+  top: 10px;
+  transition: all 0.2s ease;
+}
+
+.form-group input:focus ~ label,
+.form-group input:valid ~ label {
+  top: -20px;
+  font-size: 12px;
+  color: #1abc9c;
+}
+
+button[type="submit"] {
+  background-color: #1abc9c;
+  border: none;
+  color: #fff;}
  

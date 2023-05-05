@@ -5,11 +5,20 @@ import {BsCartFill} from 'react-icons/bs'
 import Link from 'next/link'
 import Cart from './Cart'
 import { set } from 'mongoose'
+import LoginSignup from './LoginSignup'
 const Navbar = () => {
   const categories=["Mouse","Mice","Chairs","Handsets"];
   const [toggle,settoggle]=useState(false)
+  const [login,setlogin]=useState(false)
   const showCart=()=>{
    settoggle(true);
+}
+const showloginsignup=()=>{
+ if(login ==false){
+  setlogin(true);
+ }else{
+  setlogin(false);
+ }
 }
   return (
     <>
@@ -25,11 +34,16 @@ const Navbar = () => {
       ))}
     </ul>
     <Spacer/>
-    <div className='sideicons mx-11 '>
+    <div className='sideicons mx-8 '>
       <button onClick={showCart}><BsCartFill/></button>
     </div>
+      <span className='div-loginSignup'>
+      <button className='btn-signup' onClick={showloginsignup}>Signup</button>
+      <button className='btn-login' onClick={showloginsignup}>Login</button>
+      </span>
   </nav>
   {toggle && <Cart toggle={toggle} settoggle={settoggle}/>}
+  {login && <LoginSignup login={login} setlogin={setlogin}/>}
     </>
 
   
