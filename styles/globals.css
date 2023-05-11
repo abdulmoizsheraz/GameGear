@@ -11,6 +11,9 @@ body{
 }
 
 /* Styling Navbar*/
+.Navbar{
+  box-shadow: rgba(249, 248, 248, 0.25) 0px 25px 50px -12px;
+}
 nav {
     background-color: black;
     height: 60px;
@@ -157,11 +160,11 @@ font-size: 50px;
   right: 0;
   height: 100%;
   width: 300px;
-background: rgba(255, 255, 255, 0.79);
-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-backdrop-filter: blur(5px);
--webkit-backdrop-filter: blur(5px);
-border: 1px solid rgba(255, 255, 255, 0.3);
+  background: rgba(49, 48, 48, 0.78);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(11.8px);
+  -webkit-backdrop-filter: blur(11.8px);
+  border: 1px solid rgba(49, 48, 48, 0.33);
   z-index: 5;
 
 }
@@ -264,7 +267,7 @@ border: 1px solid rgba(255, 255, 255, 0.3);
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 2px solid white;
+  
   border-radius: 12px;
   padding:  12px 12px;
   margin-right: 120px;
@@ -378,4 +381,10 @@ background-color: white;
 color: black;
 border-radius:34px ;
 }
+.expandbtn{
+  position: absolute;
+  bottom: 6px;
+  height: 13px;
+}
+
  

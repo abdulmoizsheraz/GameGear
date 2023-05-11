@@ -28,6 +28,7 @@ price={price}
 category={category}
 id={_id}
 />
+
   </>
 
 ))}

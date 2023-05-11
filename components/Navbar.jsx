@@ -1,7 +1,8 @@
 import { color } from 'framer-motion'
 import React, { useState,useRef } from 'react'
 import { Spacer } from '@chakra-ui/react'
-import {BsCartFill} from 'react-icons/bs'
+import {BsCartFill} from 'react-icons/bs';
+import {ToastContainer } from 'react-toastify';
 import Link from 'next/link'
 import Cart from './Cart'
 import { set } from 'mongoose'
@@ -31,7 +32,7 @@ const showlogin=()=>{
 }
   return (
     <>
-    <nav>
+    <nav className='Navbar'>
       <div>
       <h1>GameGear</h1>
       </div>
@@ -52,7 +53,7 @@ const showlogin=()=>{
       </span>
   </nav>
   {toggle && <Cart toggle={toggle} settoggle={settoggle}/>}
-  {signup && <Signup signup={login} setsign={setlogin}/>}
+  {signup && <Signup signup={login}  setsign={setlogin}/>}
   {login && <Login login={login} setlogin={setlogin}/>}
     </>
 

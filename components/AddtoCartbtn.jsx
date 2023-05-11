@@ -32,18 +32,6 @@ const AddtoCartbtn = ({hover,id, title, price,image }) => {
    colorScheme='green' variant='outline'>
     Add to Cart
   </Button>
-  <ToastContainer
-position="bottom-right"
-autoClose={1000}
-hideProgressBar={false}
-newestOnTop={false}
-closeOnClick
-rtl={false}
-pauseOnFocusLoss
-draggable
-pauseOnHover
-theme="dark"
-/>
 </Stack>
         </Box>
       </SlideFade>
