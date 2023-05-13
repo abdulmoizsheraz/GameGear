@@ -82,6 +82,7 @@ const LoginSignup = () => {
         </form>
       </div>
     </div>
+    <ToastContainer />
 </>
   );
 };

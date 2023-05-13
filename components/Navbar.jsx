@@ -44,8 +44,8 @@ const showlogin=()=>{
       ))}
     </ul>
     <Spacer/>
-    <div className='sideicons mx-8 '>
-      <button onClick={showCart}><BsCartFill/></button>
+    <div className='sideicons  '>
+      <button onClick={showCart}><BsCartFill size={30}/></button>
     </div>
       <span className='div-loginSignup'>
       <button className='btn-signup' onClick={showloginsignup}>Signup</button>
