@@ -39,9 +39,7 @@ justify-content: space-between;
    font-family: 'Kelly Slab', cursive;
   }
   
-  li {
-    margin: 0 10px;
-  }
+
   
   li {
     color: #fff;
@@ -51,11 +49,11 @@ justify-content: space-between;
   }
   li:hover {
 background: rgba(255, 255, 255, 0.2);
-border-radius: 9px;
+border-radius: 4px;
 box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
 backdrop-filter: blur(5px);
 -webkit-backdrop-filter: blur(5px);
-transition: .2s ease-in-out;
+transition: width 0.1s ease-out;
   }
   /* Hero Section */
   .Hero{
@@ -277,25 +275,16 @@ font-size: 50px;
 .btn-signup{
   margin:0px 12px;
   font-weight: bolder;
-  width: 82px;
-  height: 50px;
- 
+  border-radius: 14px;
 }
-.btn-signup:hover{
-  background-color: white;
-  color: black;
-}
+
 .btn-login{
-  margin:0px 12px;
+  margin:0px 8px;
   font-weight: bolder;
   width: 82px;
   height: 50px;
 }
-.btn-login:hover{
-  background-color: white;
-  padding:6px 6px;
-  color: black;
-}
+
 /* Componet */
   
 .login-signup-container {
@@ -386,5 +375,6 @@ border-radius:34px ;
   bottom: 6px;
   height: 13px;
 }
+
 
  
