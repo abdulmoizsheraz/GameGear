@@ -17,7 +17,7 @@ const ShoppingCard = ({ image, price, title, category, id }) => {
                 borderRadius="10"
                 justifyContent="center"
                 alignItems="center"
-                boxShadow="rgba(120, 118, 118, 0.3) 0px 19px 38px, rgba(42, 42, 42, 0.22) 0px 15px 12px"
+                boxShadow="rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px"
                 cursor="pointer" w="300px" h="350px"
                 onMouseEnter={() => { sethoverd(true) }}
                 onMouseLeave={() => { sethoverd(false) }}

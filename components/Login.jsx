@@ -1,10 +1,14 @@
 import React from 'react'
 
 const Login = () => {
+  const handleSubmit=(e)=>{
+    e.preventDefault();
+    console.log("login")
+  }
   return (
     <div class="login-signup-container">
   <div class="form-container login-form-container">
-    <form class="form login-form">
+    <form class="form login-form"  onSubmit={handleSubmit}>
       <h2>Login</h2>
       <div class="form-group">
         <input type="email" id="login-email" placeholder="Email" required/>

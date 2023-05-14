@@ -8,6 +8,5 @@ const UserSchema = new Schema({
     email: { type: String, required: true, unique: true },
     password: { type: String, required: true },
 }, { timestamps: true });
-const User = mongoose.models.ModifiedUser || mongoose.model("User", UserSchema);
-
-export default User;
+module.exports =
+    mongoose.models.Customer || mongoose.model('User', UserSchema);
