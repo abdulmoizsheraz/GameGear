@@ -21,7 +21,8 @@ const ShoppingCard = ({ image, price, title, category, id }) => {
                 cursor="pointer" w="300px" h="350px"
                 onMouseEnter={() => { sethoverd(true) }}
                 onMouseLeave={() => { sethoverd(false) }}
-                bg="black"
+                bg="white"
+                color={"blackAlpha.100"}
                 backdropFilter='4px'
                 borderColor="rgba(255, 250, 250, 0.13)"
             //   webkitBackdropFilter="blur(10px)"
@@ -36,12 +37,12 @@ const ShoppingCard = ({ image, price, title, category, id }) => {
                     id={id}
                 /> :
                     <>
-                        <img src={image} style={{ height: "250px", width: "250px" }} />
+                        <img src={image} style={{ height: "250px", width: "250px" ,objectFit: "contain"}} />
                     </>
                 }
-                <h3 className='productname'>{title}</h3>
-                <p className='productprice'>Price:₨ {price}</p>
-               <Link href={`/products/${id}`} className='expandbtn'><MdExpandCircleDown  size={40} /></Link>
+                <h3 className='productname text-black'>{title}</h3>
+                <p className='productprice text-black font-bold'>$ {price}</p>
+               <Link href={`/products/${id}`} className='expandbtn text-gray font-bold'><MdExpandCircleDown color='red'  size={40} /></Link>
             </Flex>
 
         </>

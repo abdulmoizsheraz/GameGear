@@ -137,13 +137,11 @@ font-size: 50px;
   }
   /* ShoppingCard */
 .productname{
-  color: white;
   font-weight: 500;
   margin: 4px;
 
 }
 .productprice{
-  color: green;
   margin: 4px;
   font-weight: 00;
 

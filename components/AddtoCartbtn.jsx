@@ -14,14 +14,12 @@ const AddtoCartbtn = ({hover,id, title, price,image }) => {
     dispatch(addtocart({ id, title, price,image }));
   }
   return (
-    <SlideFade in={hover} offsetY='20px'>
+    <>
+    <SlideFade in={hover} offsetY='20px' className='bg-red'>
         <Box
           p='40px'
           color='white'
           mt='4'
-          bg='black'
-          rounded='md'
-          shadow='md'
           width="300px"
         >
          <Stack direction='row' spacing={4}>
@@ -35,6 +33,8 @@ const AddtoCartbtn = ({hover,id, title, price,image }) => {
 </Stack>
         </Box>
       </SlideFade>
+      <ToastContainer/>
+    </>
   )
 }
 

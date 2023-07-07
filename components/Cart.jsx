@@ -17,17 +17,17 @@ const Cart = ({ toggle, settoggle }) => {
 
   return (
     <>
-      <div class="cart ">
+      <div class="cart  text-white">
         <div class="cart__header">
           <h2>My Cart</h2>
           <button onClick={closecart}><FaWindowClose /></button>
         </div>
         <div class="cart__items">
           {cartItems.map((item) => (
-            <div className="cart__item" key={item.id}>
+            <div className="cart__item text-white" key={item.id}>
               <img src={item.image} alt="Product Image" />
               <div className="cart__item-details">
-                <h3>{item.title}</h3>
+                <h3 class>{item.title}</h3>
                 <p>Price: {item.price}</p>
                 <button className="cart__remove-btn" onClick={() => removeItem(item.id)}>Remove</button>
               </div>
