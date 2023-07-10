@@ -86,7 +86,7 @@ Contributions are always welcome!
 
 ## Lessons Learned
 
-- Using Production-Ready framework like Chakra Using
+- Using Production-Ready framework like Chakra UI
 - Using Tailwind css
 - Redux Toolkit (My first Project with Redux)
 - Prop drilling in React
