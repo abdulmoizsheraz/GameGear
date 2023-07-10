@@ -17,7 +17,7 @@ The Above commands will install all the dependencies you need to run GameGear
 ```bash
 npm run dev 
 ```
-This will Run Project Locally on localhost:3000
+This will Run Project Locally on https://localhost:3000
     
 ## Dependencies
 The project has the following main dependencies:
@@ -61,7 +61,7 @@ The Next.js application offers the following key features and functionalities:
 ## Demo
 
 Live Demo at
-- game-gear.vercel.app
+- https://game-gear.vercel.app
 ## Deployment
 
 This project can be easily deployed to Vercel, a cloud platform for static sites and serverless functions. Follow the steps below to deploy the application:
