@@ -38,7 +38,7 @@ const showlogin=()=>{
       </div>
     <ul>
      { categories.map((category)=>(
-       <Link href={`${category}`}>
+       <Link href={`/${category}`}>
        <li>{category}</li>
        </Link> 
       ))}

@@ -6,12 +6,12 @@ import { useDispatch } from 'react-redux';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { addtocart } from '../store/Slices/CartSlice';
-const AddtoCartbtn = ({hover,id, title, price,image }) => {
+const AddtoCartbtn = ({hover,_id, title, price,image }) => {
   const dispatch = useDispatch();
   const notify = () => toast("Added to Cart");
   const handleaddToCart=()=>{
     notify();
-    dispatch(addtocart({ id, title, price,image }));
+    dispatch(addtocart({ _id, title, price,image }));
   }
   return (
     <>

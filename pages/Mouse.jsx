@@ -27,7 +27,7 @@ title={title}
 image={image}
 price={price}
 category={category}
-id={_id}
+_id={_id}
 />
 
   </>

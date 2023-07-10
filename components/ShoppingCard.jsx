@@ -8,7 +8,7 @@ import {
     Tag
 } from '@chakra-ui/react'
 import { useState } from 'react'
-const ShoppingCard = ({ image, price, title, category, id }) => {
+const ShoppingCard = ({ image, price, title, category, _id }) => {
     const [hovered, sethoverd] = useState(false)
     return (
         <>
@@ -34,7 +34,7 @@ const ShoppingCard = ({ image, price, title, category, id }) => {
                     title={title}
                     image={image}
                     price={price}
-                    id={id}
+                    _id={_id}
                 /> :
                     <>
                         <img src={image} style={{ height: "250px", width: "250px" ,objectFit: "contain"}} />
@@ -42,7 +42,7 @@ const ShoppingCard = ({ image, price, title, category, id }) => {
                 }
                 <h3 className='productname text-black'>{title}</h3>
                 <p className='productprice text-black font-bold'>$ {price}</p>
-               <Link href={`/products/${id}`} className='expandbtn text-gray font-bold'><MdExpandCircleDown color='red'  size={40} /></Link>
+               <Link href={`/products/${_id}`} className='expandbtn text-gray font-bold'><MdExpandCircleDown color='red'  size={40} /></Link>
             </Flex>
 
         </>
