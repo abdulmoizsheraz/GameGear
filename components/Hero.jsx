@@ -4,12 +4,6 @@ const Hero = () => {
   const span1=useRef(null)
   const span2=useRef(null)
   const span3=useRef(null)
-  const[class1,setclass1]=useState("")
-  const[removeclass1,removesetclass1]=useState("")
- useEffect(() => {
- 
- }, [])
- 
   
   return (
     <div className='Hero'>

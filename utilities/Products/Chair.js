@@ -1,4 +1,4 @@
- export const Chairs=[
+ export const Chairsdata=[
     {
         "title": "Ergonomic Gaming Chair",
         "description": "Experience ultimate comfort and support with our Ergonomic Gaming Chair. Designed with adjustable features and high-quality materials, this chair will enhance your gaming experience.",

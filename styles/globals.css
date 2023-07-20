@@ -85,7 +85,7 @@ font-size: 50px;
   
   }
   .DisplayProduct{
-    height: 50%;
+  margin-top: -86px;
     width: 100vw;
   display: flex;
   justify-content: center;
@@ -373,6 +373,7 @@ border-radius:34px ;
   bottom: 6px;
   height: 13px;
 }
+
 
 
  

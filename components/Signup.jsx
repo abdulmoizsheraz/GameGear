@@ -1,23 +1,29 @@
 import React, { useState } from 'react'
 import { toast, ToastContainer } from 'react-toastify';
+import { useCreateUserWithEmailAndPassword } from 'react-firebase-hooks/auth';
+import { auth } from '../firebase/firebaseConfig';
+import { useRouter } from 'next/router';
+
 import "react-toastify/dist/ReactToastify.css";
 const LoginSignup = () => {
+  const router = useRouter();
   const [username, setUsername] = useState('');
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
+  const [
+    createUserWithEmailAndPassword,
+    user,
+    loading,
+    error,
+  ] = useCreateUserWithEmailAndPassword(auth);
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await fetch('http://localhost:3000/api/signup', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({ username, email, password }),
-      });
-      const data = await response.json();
-      console.log(data);
-      if (response.ok) {
+  const user=  await createUserWithEmailAndPassword(email, password);
+if(user){
+  router.push('/');
+}
+      if (!error) {
         toast.success('Signup Succesfully!', {
           position: "top-right",
           autoClose: 3000,
@@ -28,6 +34,7 @@ const LoginSignup = () => {
           progress: undefined,
           theme: "light",
           });
+        
         setPassword('');
         setEmail('');
         setUsername('');

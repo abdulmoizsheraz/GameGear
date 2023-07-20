@@ -5,7 +5,7 @@ import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import Hero from '@/components/Hero';
 import Display from '@/components/Display';
-import Testimonals from '@/components/Testimonals';
+import Trending from '@/components/Trending';
 import Cart from '@/components/Cart';
 const inter = Inter({ subsets: ['latin'] });
 
@@ -22,7 +22,7 @@ export default function Home() {
 <main>
 <Hero/>
 <Display/>
-<Testimonals/>
+<Trending/>
 </main>
     </>
   )

@@ -18,15 +18,23 @@ import {
   List,
   ListItem,
 } from '@chakra-ui/react';
-import { Chairs } from "../../utilities/Products/Chair";
+import { Chairsdata } from "../../utilities/Products/Chair";
+import { Mousedata } from "../../utilities/Products/Mouse";
 
 const Slug = ({ }) => {
   const router = useRouter();
   const { _id } = router.query;
   const [productdata, setproductdata] = useState({});
   const getData = (_id) => {
-    const data = Chairs.find((chair) => chair._id === _id);
-    setproductdata(data);
+    const chair = Chairsdata.find((chair) => chair._id === _id);
+    const mouse = Mousedata.find((mouse) => mouse._id === _id);
+    if(chair){
+      setproductdata(chair)
+    }
+    if(mouse){
+      setproductdata(mouse)
+    }
+   
     console.log(productdata);
   };
 
@@ -73,7 +81,7 @@ const Slug = ({ }) => {
                   <span className="mr-3">Color</span>
                   <button className="border-2 border-white-300 rounded-full w-6 h-6 focus:outline-none"></button>
                   <button className="border-2 border-white-300 ml-1 bg-white-700 rounded-full w-6 h-6 focus:outline-none"></button>
-                  <button className="border-2 border-white-300 ml-1 bg-red-500 rounded-full w-6 h-6 focus:outline-none"></button>
+                  <button className="border-2 border-white-300 ml-1 bg-red-800 rounded-full w-6 h-6 focus:outline-none"></button>
                 </div>
               </div>
               <Button

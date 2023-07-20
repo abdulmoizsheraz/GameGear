@@ -1,11 +1,12 @@
 import {useRef,useState} from 'react'
 import Link from 'next/link';
-import {Chairs} from "../utilities/Products/Chair"
+import {Mousedata} from "../utilities/Products/Mouse"
 import { Fade, ScaleFade, Slide, SlideFade, Collapse,Box,Stack,Flex} from '@chakra-ui/react'
 import ShoppingCard from '@/components/ShoppingCard';
 import {
   Tag
 } from '@chakra-ui/react'
+import SearchBar from '@/components/SearchBar';
 const Mouse = () => {
   // let Mouses=Mousedata.products;
   const shoppingcardref=useRef(null)
@@ -16,11 +17,12 @@ const Mouse = () => {
  }
   return (
     <>
+    <SearchBar/>
     <section className="text-gray-600 body-font">
     <div className="container px-5 py-24 mx-auto">
-  <div className="flex flex-wrap m-6 ">
+  <div className="flex flex-wrap m-4 ">
         
-{Chairs.map(({title,image,price,category,_id})=>(
+{Mousedata.map(({title,image,price,category,_id})=>(
   <>
 <ShoppingCard 
 title={title}

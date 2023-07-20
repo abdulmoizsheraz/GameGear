@@ -5,7 +5,7 @@ const Display = () => {
   return (
     <div className='DisplayProduct-parent' style={{padding:"23px"}}>
 <h1 className='Herohead' style={{color:"white",textAlign:"center", fontFamily: 'Kelly Slab',
-fontSize: "50px"}}><span style={{"color":"red"}}>GameSpace</span> of Our Buyers</h1>
+fontSize: "50px"}}><span >GameSpace</span> of Our Buyers</h1>
 <div>
 
     <div className='DisplayProduct'>
@@ -17,13 +17,11 @@ fontSize: "50px"}}><span style={{"color":"red"}}>GameSpace</span> of Our Buyers<
       width="50%"
       infiniteLoop={true}
       autoFocus={true}
-      showArrows={false}
+      showArrows={true}
       showThumbs={false}
       showIndicators={false}
       interval={3000}
       stopOnHover={true}
-      emulateTouch={true}
-      showStatus={false}
       dynamicHeight={true}
       >
                 <div>

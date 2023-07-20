@@ -4,6 +4,9 @@ import { useDispatch, useSelector } from 'react-redux';
 import { removeFromCart } from '../store/Slices/CartSlice';
 
 const Cart = ({ toggle, settoggle }) => {
+  const handlecheckout=()=>{
+    
+  }
   const dispatch = useDispatch();
   const closecart = () => {
     settoggle(false)
@@ -36,7 +39,7 @@ const Cart = ({ toggle, settoggle }) => {
         </div>
         <div class="cart__subtotal">
           <p>Subtotal: $44.98</p>
-          <button class="cart__checkout-btn">Checkout</button>
+          <button class="cart__checkout-btn" onClick={handlecheckout}>Checkout</button>
         </div>
       </div>
     </>
